@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Snake</title>
-        <link rel="stylesheet" type="text/css" href="snake.css">
+        <link rel="stylesheet" type="text/css" href="css/snake.css">
     </head>
     <body>
         <div id="game-board"></div>
@@ -13,8 +13,10 @@
         <script src="js/coord.js"></script>
         <script src="js/snake.js"></script>
         <script src="js/board.js"></script>
+        <script src="js/snake-view.js"></script>
         <script>
-            var body = new Snake.Body();
+            var $el = $("#game-board");
+            var View = new Snake.View($el);
         
         </script>
     </body>

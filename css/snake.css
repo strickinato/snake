@@ -1,0 +1,20 @@
+#game-board {
+    border: solid black;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+div .square {
+    height: 20px;
+    width: 20px;
+    float: left;
+}
+
+.bodyPart {
+    background-color: fuchsia;
+}
+
+.empty {
+    background-color: chartreuse;
+}
