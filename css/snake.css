@@ -1,8 +1,18 @@
-#game-board {
+body {
+  background-color: chartreuse;
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+
+}
+
+#game-board{
     border: solid black;
-    height: 400px;
-    width: 400px;
     margin: 0 auto;
+    width: 700px;
+    height: 700px;
 }
 
 div .square {

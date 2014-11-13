@@ -3,7 +3,7 @@
         window.Snake = {};
     }
 
-    var BOARD_SIZE = 20;
+    var BOARDSIZE = 35;
 
     var View = Snake.View = function ($el) {
         this.$el = $el;
@@ -14,12 +14,6 @@
         $(window).on("keydown", this.handleKeyEvent.bind(this));
 }
 
-    View.KEYS = {
-      87: "N",
-      68: "E",
-      83: "S",
-      65: "W"
-    }
 
     Snake.View.prototype.handleKeyEvent = function(event) {
       switch(event.keyCode) {
@@ -52,8 +46,8 @@
     Snake.View.prototype.render = function () {
         var theString = "";
 
-        for (var i = 0; i < BOARD_SIZE; i++) {
-            for (var j = 0; j < BOARD_SIZE; j++) {
+        for (var i = 0; i < BOARDSIZE; i++) {
+            for (var j = 0; j < BOARDSIZE; j++) {
                 var matched = false
                 for (var k = 0; k < this.body.segments.length; k++) {
                     if (this.body.segments[k].compare([i, j])) {
