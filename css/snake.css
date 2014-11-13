@@ -28,3 +28,7 @@ div .square {
 .empty {
     background-color: chartreuse;
 }
+
+.apple {
+  background-color: red;
+}
