@@ -9,6 +9,11 @@
         this.$el = $el;
         this.body = new Snake.Body();
         this.render();
+        this.();
+    }
+    
+    Snake.View.prototype.handleKeyPress = function(event) {
+        // if (event.keyCode == 87
     }
     
     Snake.View.prototype.render = function () {
