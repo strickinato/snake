@@ -9,17 +9,18 @@
       <h1>Snake</h1>
         <div id="game-board"></div>
 
-        <script src="js/jquery-2.1.1.js"></script>
-        <!-- Whackjobs at GithubPages don't understand symlinks... -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="js/coord.js"></script>
         <script src="js/snake.js"></script>
         <script src="js/board.js"></script>
         <script src="js/snake-view.js"></script>
-        <script>
-            var $el = $("#game-board");
-            var View = new Snake.View($el);
-
-        </script>
+          <script>
+          $(function() {
+              alert('ready')
+              var $el = $("#game-board");
+              var View = new Snake.View($el);
+            });
+          </script>
     </body>
 
 </html>
